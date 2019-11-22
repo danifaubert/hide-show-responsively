@@ -21,17 +21,47 @@ body {
   margin: 8px;
 }
 
+img {
+  width: 100%;
+}
+
+
+
 @media only screen and (min-width: 25em) {
+
+  .dino-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+  }
+
+  .dino {
+    min-width: 25em;
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .dino-wrap {
+    display: inline-block;
+  }
+
+  .dino {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
 
   .dino-wrap {
     display: flex;
   }
 
   .dino {
-    width: 50%;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
   }
 
 }
