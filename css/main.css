@@ -18,38 +18,58 @@ html {
 
 body {
   display: block;
-  margin: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   width: 100%;
+  display: block;
 }
 
+.dino-wrap {
+  padding: 0;
+  list-style-type: none;
+}
 
+.dino {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 @media only screen and (min-width: 25em) {
 
   .dino-wrap {
     display: flex;
     flex-wrap: wrap;
-    margin: 8px;
+    width: 25em;
   }
 
   .dino {
-    min-width: 25em;
+    display: inline-block;
     display: flex;
+    flex-wrap: wrap;
+    width: 25em;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  .dino-wrap {
+  .dino-wrap, .dino {
     display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
   .dino {
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style-type: none;
   }
 
 }
@@ -61,7 +81,7 @@ img {
   }
 
   .dino {
-    width: 100%;
+    width: 980px;
   }
 
 }
