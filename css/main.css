@@ -17,9 +17,7 @@ html {
 }
 
 body {
-  display: block;
   margin: 0;
-  padding: 0;
 }
 
 img {
@@ -28,14 +26,15 @@ img {
 }
 
 .dino-wrap {
-  padding: 0;
-  list-style-type: none;
+  margin: 8px;
 }
 
 .dino {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
+}
+
+.dino:nth-child(even) {
+  display: none;
 }
 
 @media only screen and (min-width: 25em) {
@@ -43,33 +42,32 @@ img {
   .dino-wrap {
     display: flex;
     flex-wrap: wrap;
-    width: 25em;
   }
 
   .dino {
-    display: inline-block;
-    display: flex;
-    flex-wrap: wrap;
-    width: 25em;
+    width: 50%;
+  }
+
+  .dino:nth-child(even) {
+    display: inline;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  .dino-wrap, .dino {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  .dino-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .dino {
-    margin: 0;
-    padding: 0;
+    width: 32%;
+  }
+
+  .dino:first-child {
     display: none;
-    list-style-type: none;
   }
 
 }
@@ -78,10 +76,15 @@ img {
 
   .dino-wrap {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .dino {
-    width: 980px;
+    width: 24.7%;
+  }
+
+  .dino:first-child {
+    display: inline;
   }
 
 }
